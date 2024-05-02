@@ -1,0 +1,17 @@
+﻿<Page x:Class="Cheredova_pr17.Delete_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cheredova_pr17"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="Page1">
+
+    <Grid>
+        <Button Name="Del" Content="Button" HorizontalAlignment="Left" Margin="219,92,0,0" VerticalAlignment="Top" Width="152" Height="64" Click="Del_Click"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="91,10,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Height="48" Width="101"/>
+        <TextBox Name="box" HorizontalAlignment="Left" Height="47" Margin="210,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="168"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="Cheredova_pr17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cheredova_pr17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="del_btn_btn" Content="Delete" HorizontalAlignment="Left" Margin="288,22,0,0" VerticalAlignment="Top" Width="77" Height="29" Click="del_btn_btn_Click"/>
+        <Button Name ="Add_btn" Content="Add data" HorizontalAlignment="Left" Margin="157,22,0,0" VerticalAlignment="Top" Width="77" Height="29" Click="Add_btn_Click"/>
+        <Button Name ="con_btn" Content="Conect" HorizontalAlignment="Left" Margin="22,22,0,0" VerticalAlignment="Top" Width="75"  Height="29" Click="con_btn_Click" />
+        <Button Name ="upd_btn" Content="Update" HorizontalAlignment="Left" Margin="400,22,0,0" VerticalAlignment="Top" Width="75"  Height="29" Click="upd_btn_Click"/>
+        <DataGrid AutoGenerateColumns="False" Name="MainDG" Height="327" VerticalAlignment="Top" Margin="10,82,18,0">
+        <DataGrid.Columns>
+                <DataGridTextColumn Header="airplaine id" Binding="{Binding airplane_id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="airplaine name" Binding="{Binding airplane_name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="date of issue" Binding="{Binding date_of_issue}"></DataGridTextColumn>
+                <DataGridTextColumn Header="capacity" Binding="{Binding capacity}"></DataGridTextColumn>
+                <DataGridTextColumn Header="last tech service" Binding="{Binding last_tech_service}"></DataGridTextColumn>
+                <DataGridTextColumn Header="flight hours" Binding="{Binding flight_hours}"></DataGridTextColumn>
+            </DataGrid.Columns>
+         </DataGrid>
+    </Grid>
+</Window>
